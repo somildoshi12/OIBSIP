@@ -1,6 +1,7 @@
 package com.somildoshi.unitconverter;
 
 import android.os.Bundle;
+
 import android.app.Fragment;
 
 import android.text.TextUtils;
@@ -12,41 +13,41 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 
-public class ckfrag extends Fragment {
+public class cifrag extends Fragment {
+
     View view;
-    EditText etc;
-    String setc;
-    TextView tvk;
+    EditText etf;
+    String setf;
+    TextView tvc;
     Button submit;
-    float c=0,k=0;
+    float f=0,c=0;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        view = inflater.inflate(R.layout.fragment_ckfrag, container, false);
+        view = inflater.inflate(R.layout.fragment_cifrag, container, false);
 
-        etc=view.findViewById(R.id.etc);
+        etf=view.findViewById(R.id.etf);
         submit=view.findViewById(R.id.submit);
-        tvk=view.findViewById(R.id.tvk);
+        tvc=view.findViewById(R.id.tvc);
 
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                setc=etc.getText().toString();
-                if (TextUtils.isEmpty(setc)) {
-                    etc.setError("Enter value in numbers");
+                setf=etf.getText().toString();
+                if (TextUtils.isEmpty(setf)) {
+                    etf.setError("Enter value in degrees");
                     return;
                 }
                 else {
-                    c = Float.parseFloat(etc.getText().toString());
-                    k = (float) (c * 1.6093);
-                    tvk.setText("Length in Kilometers: " + k);
-                    tvk.setVisibility(view.VISIBLE);
+                    f = Float.parseFloat(etf.getText().toString());
+                    c = (float) (f * 0.3937);
+                    tvc.setText("Length in Inches: " + c);
+                    tvc.setVisibility(view.VISIBLE);
                 }
             }
         });
         return view;
     }
-
 }

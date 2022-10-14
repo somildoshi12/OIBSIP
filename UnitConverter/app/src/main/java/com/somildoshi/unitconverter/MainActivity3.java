@@ -18,37 +18,37 @@ public class MainActivity3 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main3);
 
-        cf=findViewById(R.id.cf);
-        ck=findViewById(R.id.ck);
-        fc=findViewById(R.id.fc);
-        fk=findViewById(R.id.fk);
-        kc=findViewById(R.id.kc);
-        kf=findViewById(R.id.kf);
+        cf=findViewById(R.id.km);
+        ck=findViewById(R.id.mk);
+        fc=findViewById(R.id.ci);
+        fk=findViewById(R.id.ic);
+        kc=findViewById(R.id.my);
+        kf=findViewById(R.id.ym);
 
     }
 
     public void ctof(View view) {
-        loadFragment(new cffrag());
+        loadFragment(new kmfrag());
     }
 
     public void ctok(View view) {
-        loadFragment(new ckfrag());
+        loadFragment(new mkfrag());
     }
 
     public void ftoc(View view) {
-        loadFragment(new fcfrag());
+        loadFragment(new cifrag());
     }
 
     public void ftok(View view) {
-        loadFragment(new fkfrag());
+        loadFragment(new icfrag());
     }
 
     public void ktoc(View view) {
-        loadFragment(new kcfrag());
+        loadFragment(new myfrag());
     }
 
     public void ktof(View view) {
-        loadFragment(new kffrag());
+        loadFragment(new ymfrag());
     }
 
     private void loadFragment(Fragment fragment) {

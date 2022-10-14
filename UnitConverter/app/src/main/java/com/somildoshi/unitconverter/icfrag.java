@@ -13,24 +13,23 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 
-public class fcfrag extends Fragment {
-
+public class icfrag extends Fragment {
     View view;
     EditText etf;
     String setf;
-    TextView tvc;
+    TextView tvk;
     Button submit;
-    float f=0,c=0;
+    float f=0,k=0;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        view = inflater.inflate(R.layout.fragment_fcfrag, container, false);
+        view = inflater.inflate(R.layout.fragment_icfrag, container, false);
 
         etf=view.findViewById(R.id.etf);
         submit=view.findViewById(R.id.submit);
-        tvc=view.findViewById(R.id.tvc);
+        tvk=view.findViewById(R.id.tvk);
 
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -42,9 +41,9 @@ public class fcfrag extends Fragment {
                 }
                 else {
                     f = Float.parseFloat(etf.getText().toString());
-                    c = (float) (f * 0.3937);
-                    tvc.setText("Length in Inches: " + c);
-                    tvc.setVisibility(view.VISIBLE);
+                    k = (float) (f * 2.54);
+                    tvk.setText("Length in Centimeters: " + k);
+                    tvk.setVisibility(view.VISIBLE);
                 }
             }
         });

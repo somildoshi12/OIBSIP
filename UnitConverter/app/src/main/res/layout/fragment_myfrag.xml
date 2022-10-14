@@ -4,14 +4,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".fkfrag">
+    tools:context=".myfrag">
 
     <!-- TODO: Update blank fragment layout -->
     <EditText
-        android:id="@+id/etf"
+        android:id="@+id/etk"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Length in Inches:"
+        android:hint="Length in Meters:"
         android:inputType="numberSigned|numberDecimal"
         android:textSize="25sp"
         android:textColor="@color/white"
@@ -30,7 +30,7 @@
         android:text="Submit"
         android:textSize="20sp"/>
     <TextView
-        android:id="@+id/tvk"
+        android:id="@+id/tvc"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:visibility="invisible"

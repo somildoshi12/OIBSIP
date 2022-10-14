@@ -13,41 +13,44 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 
-public class kffrag extends Fragment {
-
+public class kmfrag extends Fragment {
     View view;
-    EditText etk;
-    String setk;
+    EditText etc;
+    String setc;
     TextView tvf;
     Button submit;
-    float k = 0, f = 0;
+    float c=0,f=0;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        view = inflater.inflate(R.layout.fragment_kffrag, container, false);
+        view = inflater.inflate(R.layout.fragment_kmfrag, container, false);
 
-        etk = view.findViewById(R.id.etk);
-        submit = view.findViewById(R.id.submit);
-        tvf = view.findViewById(R.id.tvf);
+        etc=view.findViewById(R.id.etc);
+
+
+        submit=view.findViewById(R.id.submit);
+        tvf=view.findViewById(R.id.tvf);
 
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                setk=etk.getText().toString();
-                if (TextUtils.isEmpty(setk)) {
-                    etk.setError("Enter value in degrees");
+                setc=etc.getText().toString();
+                if (TextUtils.isEmpty(setc)) {
+                    etc.setError("Enter value in numbers");
                     return;
                 }
                 else {
-                    k = Float.parseFloat(etk.getText().toString());
-                    f = (float) (k * 0.9144);
-                    tvf.setText("Length in Meters: " + f);
+                    c = Float.parseFloat(etc.getText().toString());
+                    f = (float) (c * 0.62137);
+                    tvf.setText("Length in Miles: " + f);
                     tvf.setVisibility(view.VISIBLE);
                 }
             }
+
         });
         return view;
     }
+
 }

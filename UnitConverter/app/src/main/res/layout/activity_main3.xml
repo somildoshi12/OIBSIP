@@ -38,7 +38,7 @@
 
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/cf"
+                android:id="@+id/km"
                 android:layout_width="60dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="0dp"
@@ -54,7 +54,7 @@
                 android:textStyle="bold" />
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/ck"
+                android:id="@+id/mk"
                 android:layout_width="60dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="35dp"
@@ -79,7 +79,7 @@
 
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/fc"
+                android:id="@+id/ci"
                 android:layout_width="60dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="0dp"
@@ -94,7 +94,7 @@
                 android:textStyle="bold" />
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/fk"
+                android:id="@+id/ic"
                 android:layout_width="60dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="35dp"
@@ -119,7 +119,7 @@
 
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/kc"
+                android:id="@+id/my"
                 android:layout_width="60dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="0dp"
@@ -134,7 +134,7 @@
                 android:textStyle="bold" />
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/kf"
+                android:id="@+id/ym"
                 android:layout_width="60dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="35dp"

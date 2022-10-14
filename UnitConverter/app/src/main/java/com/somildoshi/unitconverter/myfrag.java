@@ -13,7 +13,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 
-public class kcfrag extends Fragment {
+public class myfrag extends Fragment {
     View view;
     EditText etk;
     String setk;
@@ -25,7 +25,7 @@ public class kcfrag extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        view = inflater.inflate(R.layout.fragment_kcfrag, container, false);
+        view = inflater.inflate(R.layout.fragment_myfrag, container, false);
 
         etk = view.findViewById(R.id.etk);
         submit = view.findViewById(R.id.submit);
