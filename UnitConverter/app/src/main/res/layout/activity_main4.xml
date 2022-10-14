@@ -23,7 +23,7 @@
             android:gravity="center"
             android:minHeight="48dp"
 
-            android:text="Length"
+            android:text="Speed"
             android:textColor="#FFFFFF"
             android:textSize="48sp"
             android:textStyle="bold"
@@ -39,7 +39,7 @@
 
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/km"
+                android:id="@+id/k_m"
                 android:layout_width="60dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="0dp"
@@ -48,14 +48,14 @@
                 android:background="@drawable/button1"
                 android:backgroundTint="#FB8C00"
                 android:fontFamily="@font/allerta_stencil"
-                android:onClick="ctof"
-                android:text="km -> mile"
+                android:onClick="ctof2"
+                android:text="km/hr -> m/s"
                 android:textColor="#000000"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/mk"
+                android:id="@+id/m_k"
                 android:layout_width="60dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="35dp"
@@ -63,8 +63,8 @@
                 android:layout_weight="1"
                 android:background="@drawable/button3"
                 android:fontFamily="@font/allerta_stencil"
-                android:onClick="ctok"
-                android:text="mile -> km"
+                android:onClick="ctok2"
+                android:text="m/s -> km/hr"
                 android:textColor="#000000"
                 android:textSize="16sp"
                 android:textStyle="bold" />
@@ -80,47 +80,7 @@
 
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/ci"
-                android:layout_width="60dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="0dp"
-                android:layout_marginRight="35dp"
-                android:layout_weight="1"
-                android:background="@drawable/button5"
-                android:fontFamily="@font/allerta_stencil"
-                android:onClick="ftoc"
-                android:text="cm -> inch"
-                android:textColor="#000000"
-                android:textSize="16sp"
-                android:textStyle="bold" />
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/ic"
-                android:layout_width="60dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="35dp"
-                android:layout_marginRight="0dp"
-                android:layout_weight="1"
-                android:background="@drawable/button5"
-                android:fontFamily="@font/allerta_stencil"
-                android:onClick="ftok"
-                android:text="inch -> cm"
-                android:textColor="#000000"
-                android:textSize="16sp"
-                android:textStyle="bold" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:gravity="center"
-            android:orientation="horizontal"
-            tools:context=".MainActivity3">
-
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/my"
+                android:id="@+id/mph_kmhr"
                 android:layout_width="60dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="0dp"
@@ -128,14 +88,14 @@
                 android:layout_weight="1"
                 android:background="@drawable/button4"
                 android:fontFamily="@font/allerta_stencil"
-                android:onClick="ktoc"
-                android:text="m -> yard"
+                android:onClick="ftoc2"
+                android:text="mph -> km/hr"
                 android:textColor="#000000"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/ym"
+                android:id="@+id/kmhr_mph"
                 android:layout_width="60dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="35dp"
@@ -143,15 +103,15 @@
                 android:layout_weight="1"
                 android:background="@drawable/button2"
                 android:fontFamily="@font/allerta_stencil"
-                android:onClick="ktof"
-                android:text="yard -> m"
+                android:onClick="ftok2"
+                android:text="km/hr -> mph"
                 android:textColor="#000000"
                 android:textSize="16sp"
                 android:textStyle="bold" />
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/lay"
+            android:id="@+id/lay2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
