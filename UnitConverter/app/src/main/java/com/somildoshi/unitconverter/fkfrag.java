@@ -41,8 +41,8 @@ public class fkfrag extends Fragment {
                 }
                 else {
                     f = Float.parseFloat(etf.getText().toString());
-                    k = (float) ((f - 32) * 5 / 9 + 273.15);
-                    tvk.setText("Degrees in Kelvin: " + k);
+                    k = (float) (f * 2.54);
+                    tvk.setText("Length in Centimeters: " + k);
                     tvk.setVisibility(view.VISIBLE);
                 }
             }

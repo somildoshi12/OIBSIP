@@ -40,8 +40,8 @@ public class kcfrag extends Fragment {
                     return;
                 } else {
                     k = Float.parseFloat(etk.getText().toString());
-                    c = (float) (k - 273.15);
-                    tvc.setText("Degrees in Celsius: " + c);
+                    c = (float) (k * 1.0936);
+                    tvc.setText("Length in Yards: " + c);
                     tvc.setVisibility(view.VISIBLE);
                 }
             }

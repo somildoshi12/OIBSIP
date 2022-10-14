@@ -42,8 +42,8 @@ public class fcfrag extends Fragment {
                 }
                 else {
                     f = Float.parseFloat(etf.getText().toString());
-                    c = (f - 32) * 5 / 9;
-                    tvc.setText("Degrees in Celsius: " + c);
+                    c = (float) (f * 0.3937);
+                    tvc.setText("Length in Inches: " + c);
                     tvc.setVisibility(view.VISIBLE);
                 }
             }

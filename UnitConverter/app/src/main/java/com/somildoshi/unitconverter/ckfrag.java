@@ -35,13 +35,13 @@ public class ckfrag extends Fragment {
             public void onClick(View v) {
                 setc=etc.getText().toString();
                 if (TextUtils.isEmpty(setc)) {
-                    etc.setError("Enter value in degrees");
+                    etc.setError("Enter value in numbers");
                     return;
                 }
                 else {
                     c = Float.parseFloat(etc.getText().toString());
-                    k = (float) (c + 273.15);
-                    tvk.setText("Degrees in Kelvin: " + k);
+                    k = (float) (c * 1.6093);
+                    tvk.setText("Length in Kilometers: " + k);
                     tvk.setVisibility(view.VISIBLE);
                 }
             }

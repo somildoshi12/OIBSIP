@@ -42,8 +42,8 @@ public class kffrag extends Fragment {
                 }
                 else {
                     k = Float.parseFloat(etk.getText().toString());
-                    f = (float) (k - 273.15) * 9 / 5 + 32;
-                    tvf.setText("Degrees in Fahrenheit: " + f);
+                    f = (float) (k * 0.9144);
+                    tvf.setText("Length in Meters: " + f);
                     tvf.setVisibility(view.VISIBLE);
                 }
             }

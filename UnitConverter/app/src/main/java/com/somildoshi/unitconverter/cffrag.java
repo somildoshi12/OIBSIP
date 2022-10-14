@@ -38,13 +38,13 @@ public class cffrag extends Fragment {
             public void onClick(View v) {
                 setc=etc.getText().toString();
                 if (TextUtils.isEmpty(setc)) {
-                    etc.setError("Enter value in degrees");
+                    etc.setError("Enter value in numbers");
                     return;
                 }
                 else {
                     c = Float.parseFloat(etc.getText().toString());
-                    f = (float) ((c * 9 / 5) + 32);
-                    tvf.setText("Degrees in fahrenheit: " + f);
+                    f = (float) (c * 0.62137);
+                    tvf.setText("Length in Miles: " + f);
                     tvf.setVisibility(view.VISIBLE);
                 }
             }
