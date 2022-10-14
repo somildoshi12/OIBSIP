@@ -1,4 +1,4 @@
-package com.somildoshi.UnitConverter;
+package com.somildoshi.unitconverter;
 
 import org.junit.Test;
 
